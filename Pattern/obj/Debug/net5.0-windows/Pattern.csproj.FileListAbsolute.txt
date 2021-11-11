@@ -1,0 +1,5 @@
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern.csprojAssemblyReference.cache
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern_MarkupCompile.cache
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern_MarkupCompile.lref
