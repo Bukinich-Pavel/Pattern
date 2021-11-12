@@ -17,8 +17,8 @@
   "libraries": {
     "WriterLibrary/1.0.0": {
       "type": "project",
-      "path": "../AnimalWriterLibrary/WriterLibrary.csproj",
-      "msbuildProject": "../AnimalWriterLibrary/WriterLibrary.csproj"
+      "path": "../WriterLibrary/WriterLibrary.csproj",
+      "msbuildProject": "../WriterLibrary/WriterLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -53,8 +53,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Ксения\\source\\repos\\Pattern\\AnimalWriterLibrary\\WriterLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\AnimalWriterLibrary\\WriterLibrary.csproj"
+            "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {
+              "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj"
             }
           }
         }

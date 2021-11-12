@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AnimalWriterLibrary\WriterLibrary.csproj" />
+    <ProjectReference Include="..\WriterLibrary\WriterLibrary.csproj" />
   </ItemGroup>
 
 </Project>

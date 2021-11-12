@@ -1,0 +1,12 @@
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\bin\Debug\net5.0\WriterLibrary.deps.json
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\bin\Debug\net5.0\WriterLibrary.dll
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\bin\Debug\net5.0\ref\WriterLibrary.dll
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\bin\Debug\net5.0\WriterLibrary.pdb
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.csprojAssemblyReference.cache
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.AssemblyInfoInputs.cache
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.AssemblyInfo.cs
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.dll
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\ref\WriterLibrary.dll
+C:\Users\Ксения\source\repos\Pattern\WriterLibrary\obj\Debug\net5.0\WriterLibrary.pdb

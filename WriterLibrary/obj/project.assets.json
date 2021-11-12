@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ксения\\source\\repos\\Pattern\\AnimalWriterLibrary\\WriterLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
       "projectName": "WriterLibrary",
-      "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\AnimalWriterLibrary\\WriterLibrary.csproj",
+      "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
       "packagesPath": "C:\\Users\\Ксения\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\AnimalWriterLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ксения\\AppData\\Roaming\\NuGet\\NuGet.Config",

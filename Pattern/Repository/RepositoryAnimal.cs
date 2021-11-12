@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pattern.Model;
-//using Pattern.Save;
 using WriterLibrary;
 
 namespace Pattern.Repository
@@ -39,9 +38,6 @@ namespace Pattern.Repository
             Writer<IAnimal> writer = new Writer<IAnimal>(saveToPDF, animals);
             writer.Save();
 
-            //SaveToPDF saveToPDF = new SaveToPDF($"{nameFile}");
-            //AnimalWriter animalWriter = new AnimalWriter(saveToPDF, animals);
-            //animalWriter.Save();
         }
 
     }
