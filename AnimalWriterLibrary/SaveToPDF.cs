@@ -1,14 +1,13 @@
-﻿using Pattern.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Pattern.Save
+namespace WriterLibrary
 {
-    class SaveToPDF : IAnimalSave
+    public class SaveToPDF : ISave
     {
         string nameFile;
 
@@ -17,11 +16,11 @@ namespace Pattern.Save
             this.nameFile = nameFile;
         }
 
-        public void SaveAllAnimal(StringBuilder animals)
+        public void SaveAll(StringBuilder strings)
         {
             using (StreamWriter sw = new StreamWriter($"{nameFile}.pdf"))
             {
-                sw.WriteLineAsync(animals);
+                sw.WriteLineAsync(strings);
             }
 
         }

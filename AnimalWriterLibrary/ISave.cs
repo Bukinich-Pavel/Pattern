@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Pattern.Model;
 
-namespace Pattern.Save
+namespace WriterLibrary
 {
-    interface IAnimalSave
+    public interface ISave
     {
-        void SaveAllAnimal(StringBuilder animals);
+        void SaveAll(StringBuilder animals);
     }
 }

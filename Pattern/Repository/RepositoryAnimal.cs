@@ -4,7 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Pattern.Model;
-using Pattern.Save;
+//using Pattern.Save;
+using WriterLibrary;
 
 namespace Pattern.Repository
 {
@@ -17,7 +18,7 @@ namespace Pattern.Repository
             animals = new List<IAnimal>();
         }
 
-        public RepositoryAnimal( IEnumerable<IAnimal> animals)
+        public RepositoryAnimal(IEnumerable<IAnimal> animals)
         {
             this.animals = animals.ToList();
         }
@@ -35,9 +36,12 @@ namespace Pattern.Repository
         public void Save(string nameFile)
         {
             SaveToPDF saveToPDF = new SaveToPDF($"{nameFile}");
+            Writer<IAnimal> writer = new Writer<IAnimal>(saveToPDF, animals);
+            writer.Save();
 
-            AnimalWriter animalWriter = new AnimalWriter(saveToPDF, animals);
-            animalWriter.Save();
+            //SaveToPDF saveToPDF = new SaveToPDF($"{nameFile}");
+            //AnimalWriter animalWriter = new AnimalWriter(saveToPDF, animals);
+            //animalWriter.Save();
         }
 
     }
