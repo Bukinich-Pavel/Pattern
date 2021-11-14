@@ -8,6 +8,7 @@ namespace Pattern.Model
 {
     class Amphibian : IAnimal
     {
+        public int Id { get; set; }
         public string KindAnimal { get; set; }
 
         public Amphibian(string kindAnimal)

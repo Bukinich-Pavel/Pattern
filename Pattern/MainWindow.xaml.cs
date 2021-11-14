@@ -18,11 +18,16 @@ namespace Pattern
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, IView
     {
+        Presenter presenter;
+
         public MainWindow()
         {
             InitializeComponent();
+            ApplicationContext db = new ApplicationContext();
+            presenter = new Presenter(this, db);
+            FirstTable.ItemsSource = presenter.GetBirds();
         }
     }
 }
