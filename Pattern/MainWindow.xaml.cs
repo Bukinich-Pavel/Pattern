@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pattern.View;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,11 +27,15 @@ namespace Pattern
             ApplicationContext db = new ApplicationContext();
             presenter = new Presenter(this, db);
 
-            BirdTable = presenter.GetBirds();
-            MammalTable = presenter.GetMammals();
-            AmphibianTable = presenter.GetAmphibians();
+            UpdateBird();
+            UpdateMammals();
+            UpdateAmphibian();
 
-            buttonDeleteThirdTable.Click += (s, e) => presenter.DeleteAmphibian(ThirdTable.SelectedItem);
+            buttonDeleteFirstTable.Click += (s, e) => { presenter.DeleteBird(FirstTable.SelectedItem); UpdateBird(); };
+            buttonDeleteSecondTable.Click += (s, e) => { presenter.DeleteMammal(SecondTable.SelectedItem); UpdateMammals(); };
+            buttonDeleteThirdTable.Click += (s, e) => { presenter.DeleteAmphibian(ThirdTable.SelectedItem); UpdateAmphibian(); };
+
+
         }
 
         public IEnumerable BirdTable 
@@ -49,6 +54,51 @@ namespace Pattern
         {
             get => ThirdTable.ItemsSource;
             set => ThirdTable.ItemsSource = value;
+        }
+
+
+        #region private method
+        private void UpdateAmphibian()
+        {
+            AmphibianTable = presenter.GetAmphibians();
+        }
+
+        private void UpdateMammals()
+        {
+            MammalTable = presenter.GetMammals();
+        }
+
+        private void UpdateBird()
+        {
+            BirdTable = presenter.GetBirds();
+        }
+        #endregion
+
+        private void buttonUpdateFirstTable_Click(object sender, RoutedEventArgs e)
+        {
+            Update update = new Update(FirstTable.SelectedItem);
+            update.ShowDialog();
+            string newName = update.textUpdate.Text;
+            presenter.UpdateBird(FirstTable.SelectedItem, newName);
+            UpdateBird();
+        }
+
+        private void buttonUpdateSecondTable_Click(object sender, RoutedEventArgs e)
+        {
+            Update update = new Update(SecondTable.SelectedItem);
+            update.ShowDialog();
+            string newName = update.textUpdate.Text;
+            presenter.UpdateMammal(SecondTable.SelectedItem, newName);
+            UpdateMammals();
+        }
+
+        private void buttonUpdateThirdTable_Click(object sender, RoutedEventArgs e)
+        {
+            Update update = new Update(ThirdTable.SelectedItem);
+            update.ShowDialog();
+            string newName = update.textUpdate.Text;
+            presenter.UpdateAmphibion(ThirdTable.SelectedItem, newName);
+            UpdateAmphibian();
         }
     }
 }

@@ -53,6 +53,7 @@ namespace Pattern
             db.SaveChanges();
         }
 
+
         public void DeleteBird(Bird bird)
         {
             db.Birds.Remove(bird);
@@ -71,11 +72,13 @@ namespace Pattern
             db.SaveChanges();
         }
 
+
         public void UpdateBird(Bird bird)
         {
             if (bird == null) return;
 
             db.Birds.Update(bird);
+            db.SaveChanges();
         }
 
         public void UpdateMammal(Mammal mammal)
@@ -83,6 +86,7 @@ namespace Pattern
             if (mammal == null) return;
 
             db.Mammals.Update(mammal);
+            db.SaveChanges();
         }
 
         public void UpdateAmphibian(Amphibian amphibian)
@@ -90,6 +94,7 @@ namespace Pattern
             if (amphibian == null) return;
 
             db.Amphibians.Update(amphibian);
+            db.SaveChanges();
         }
     }
 }

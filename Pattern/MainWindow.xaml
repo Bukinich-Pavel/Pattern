@@ -15,18 +15,31 @@
         </Grid.ColumnDefinitions>
 
         <ListBox Grid.Column="0" x:Name="FirstTable">
-            
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="buttonAddFirstTable" Header="Добавить" />
+                    <MenuItem x:Name="buttonUpdateFirstTable" Header="Изменить" Click="buttonUpdateFirstTable_Click" />
+                    <MenuItem x:Name="buttonDeleteFirstTable" Header="удалить" />
+                </ContextMenu>
+            </ListBox.ContextMenu>
         </ListBox>
 
         <ListBox Grid.Column="1" x:Name="SecondTable">
-            
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="buttonAddSecondTable" Header="Добавить" />
+                    <MenuItem x:Name="buttonUpdateSecondTable" Header="Изменить" Click="buttonUpdateSecondTable_Click" />
+                    <MenuItem x:Name="buttonDeleteSecondTable" Header="Удалить" />
+                </ContextMenu>
+            </ListBox.ContextMenu>
         </ListBox>
 
         <ListBox Grid.Column="2" x:Name="ThirdTable">
             <ListBox.ContextMenu>
                 <ContextMenu>
                     <MenuItem x:Name="buttonAddThirdTable" Header="Добавить" />
-                    <MenuItem x:Name="buttonDeleteThirdTable" Header="удалить" />
+                    <MenuItem x:Name="buttonUpdateThirdTable" Header="Изменить" Click="buttonUpdateThirdTable_Click" />
+                    <MenuItem x:Name="buttonDeleteThirdTable" Header="Удалить" />
                 </ContextMenu>
             </ListBox.ContextMenu>
         </ListBox>

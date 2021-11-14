@@ -49,14 +49,32 @@ namespace Pattern
         }
 
 
-        public void DeleteBird(Bird bird)
+        public void DeleteBird(object bird)
         {
-
+            try
+            {
+                Bird temp = bird as Bird;
+                if (temp == null) return;
+                model.DeleteBird(temp);
+            }
+            catch
+            {
+                return;
+            }
         }
 
-        public void DeleteMammal(Mammal mammal)
+        public void DeleteMammal(object mammal)
         {
-
+            try
+            {
+                Mammal temp = mammal as Mammal;
+                if (temp == null) return;
+                model.DeleteMammal(temp);
+            }
+            catch
+            {
+                return;
+            }
         }
 
         public void DeleteAmphibian(object amphibian)
@@ -71,6 +89,55 @@ namespace Pattern
             {
                 return;
             }
+        }
+
+
+        public void UpdateBird(object bird, string newName)
+        {
+            try
+            {
+                Bird temp = bird as Bird;
+                if (temp == null) return;
+                temp.KindAnimal = newName;
+                model.UpdateBird(temp);
+            }
+            catch
+            {
+                return;
+            }
+
+        }
+
+        public void UpdateMammal(object mammal, string newName)
+        {
+            try
+            {
+                Mammal temp = mammal as Mammal;
+                if (temp == null) return;
+                temp.KindAnimal = newName;
+                model.UpdateMammal(temp);
+            }
+            catch
+            {
+                return;
+            }
+
+        }
+
+        public void UpdateAmphibion(object amphibian, string newName)
+        {
+            try
+            {
+                Amphibian temp = amphibian as Amphibian;
+                if (temp == null) return;
+                temp.KindAnimal = newName;
+                model.UpdateAmphibian(temp);
+            }
+            catch
+            {
+                return;
+            }
+
         }
 
     }
