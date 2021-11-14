@@ -14,9 +14,21 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <ListBox x:Name="FirstTable">
+        <ListBox Grid.Column="0" x:Name="FirstTable">
             
         </ListBox>
-        
+
+        <ListBox Grid.Column="1" x:Name="SecondTable">
+            
+        </ListBox>
+
+        <ListBox Grid.Column="2" x:Name="ThirdTable">
+            <ListBox.ContextMenu>
+                <ContextMenu>
+                    <MenuItem x:Name="buttonAddThirdTable" Header="Добавить" />
+                    <MenuItem x:Name="buttonDeleteThirdTable" Header="удалить" />
+                </ContextMenu>
+            </ListBox.ContextMenu>
+        </ListBox>
     </Grid>
 </Window>

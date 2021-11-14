@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {}
+    "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {
+    "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
         "projectName": "WriterLibrary",
-        "projectPath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
+        "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj",
         "packagesPath": "C:\\Users\\Ксения\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ксения\\AppData\\Roaming\\NuGet\\NuGet.Config",

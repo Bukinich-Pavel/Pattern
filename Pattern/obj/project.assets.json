@@ -5723,11 +5723,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\Pattern\\Pattern.csproj",
+      "projectUniqueName": "C:\\Users\\Ксения\\source\\repos\\Pattern\\Pattern\\Pattern.csproj",
       "projectName": "Pattern",
-      "projectPath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\Pattern\\Pattern.csproj",
+      "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\Pattern\\Pattern.csproj",
       "packagesPath": "C:\\Users\\Ксения\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\Pattern\\obj\\",
+      "outputPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\Pattern\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ксения\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5744,8 +5744,8 @@
         "net5.0-windows7.0": {
           "targetAlias": "net5.0-windows",
           "projectReferences": {
-            "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {
-              "projectPath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj"
+            "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj": {
+              "projectPath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\WriterLibrary\\WriterLibrary.csproj"
             }
           }
         }

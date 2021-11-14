@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LfSOAdme8RmgCttNk2Q4pOqjwNGU84im3cm7Y7n7tnYZ3446WuGSBFiLQeBYa96X7t285xWxfkL7qLfPWyi/6A==",
+  "dgSpecHash": "KXBvbHEDudGohtl5EhWgTjIPbyzFW/gvARoKnwzVpBIr2RlU1a4CJCd8HciW7A62hHZ/nGP4VU99sv4u58pssw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ксения\\Source\\Repos\\Pattern\\Pattern\\Pattern.csproj",
+  "projectFilePath": "C:\\Users\\Ксения\\source\\repos\\Pattern\\Pattern\\Pattern.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ксения\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Ксения\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

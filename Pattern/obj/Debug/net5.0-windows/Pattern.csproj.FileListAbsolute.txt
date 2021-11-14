@@ -1,4 +1,3 @@
-C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern.csprojAssemblyReference.cache
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\MainWindow.g.cs
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\App.g.cs
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern_MarkupCompile.cache
@@ -57,3 +56,4 @@ C:\Users\Ксения\Source\Repos\Pattern\Pattern\bin\Debug\net5.0-windows\runt
 C:\Users\Ксения\Source\Repos\Pattern\Pattern\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Ксения\Source\Repos\Pattern\Pattern\bin\Debug\net5.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Ксения\Source\Repos\Pattern\Pattern\bin\Debug\net5.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern.csprojAssemblyReference.cache
