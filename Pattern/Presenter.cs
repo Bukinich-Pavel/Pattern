@@ -19,6 +19,16 @@ namespace Pattern
             model = new ModelVP(db);
         }
 
+        public void SaveToFile()
+        {
+            var writerBird = new WriterLibrary.Writer<Bird>(new WriterLibrary.SaveToPDF("Птицы"), model.GetAllBird());
+            writerBird.Save();
+            var writerMammal = new WriterLibrary.Writer<Mammal>(new WriterLibrary.SaveToPDF("Млекопитающие"), model.GetAllMammal());
+            writerMammal.Save();
+            var writerAmphibian = new WriterLibrary.Writer<Amphibian>(new WriterLibrary.SaveToPDF("Земноводные"), model.GetAllAmphibian());
+            writerAmphibian.Save();
+        }
+
         public List<Bird> GetBirds()
         {
             return model.GetAllBird();

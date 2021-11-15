@@ -37,10 +37,7 @@ namespace Pattern
             buttonAddSecondTable.Click += AddModel;
             buttonAddThirdTable.Click += AddModel;
 
-        }
-
-        ~MainWindow()
-        {
+            buttonSaveToFile.Click += (s, e) => presenter.SaveToFile();
 
         }
 

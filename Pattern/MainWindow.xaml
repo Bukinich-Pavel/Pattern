@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
         
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -43,5 +48,7 @@
                 </ContextMenu>
             </ListBox.ContextMenu>
         </ListBox>
+
+        <Button x:Name="buttonSaveToFile" Grid.Row="1" Grid.ColumnSpan="3" FontSize="26">Сохранить</Button>
     </Grid>
 </Window>
