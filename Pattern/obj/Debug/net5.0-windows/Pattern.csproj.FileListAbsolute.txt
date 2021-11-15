@@ -59,3 +59,5 @@ C:\Users\Ксения\Source\Repos\Pattern\Pattern\bin\Debug\net5.0-windows\runt
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\Pattern.csprojAssemblyReference.cache
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\View\Update.g.cs
 C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\View\Update.baml
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\View\Add.g.cs
+C:\Users\Ксения\source\repos\Pattern\Pattern\obj\Debug\net5.0-windows\View\Add.baml

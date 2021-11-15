@@ -9,9 +9,9 @@ namespace Pattern.Factory
 {
     static class AnimalFactory
     {
-        public static IAnimal GetAnimal(string TypeAnimal, string kindAnimal)
+        public static IAnimal GetAnimal(string typeAnimal, string kindAnimal)
         {
-            switch (TypeAnimal)
+            switch (typeAnimal)
             {
                 case "Птица": return new Bird(kindAnimal);
                 case "Земноводное": return new Amphibian(kindAnimal);

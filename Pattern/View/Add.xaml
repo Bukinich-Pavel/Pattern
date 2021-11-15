@@ -1,0 +1,23 @@
+﻿<Window x:Class="Pattern.View.Add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pattern.View"
+        mc:Ignorable="d"
+        Title="Add" Height="300" Width="500">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <WrapPanel Margin="0,20,0,0">
+                <TextBlock Text="Кого добавить: " FontSize="30" />
+                <TextBox x:Name="modelName" FontSize="30" Height="50" Width="200" />
+            </WrapPanel>
+            <WrapPanel Margin="0,17,0,0">
+                <TextBlock Text="Название:         " FontSize="30" />
+                <TextBox x:Name="nameKind" FontSize="30" Height="50" Width="203" />
+            </WrapPanel>
+
+            <Button x:Name="Save" FontSize="30" Margin="0,20,0,0" Click="Save_Click">Сохранить</Button>
+        </StackPanel>
+    </Grid>
+</Window>

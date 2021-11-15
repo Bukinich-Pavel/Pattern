@@ -27,16 +27,23 @@ namespace Pattern
             ApplicationContext db = new ApplicationContext();
             presenter = new Presenter(this, db);
 
-            UpdateBird();
-            UpdateMammals();
-            UpdateAmphibian();
+            UpdateAllTable();
 
-            buttonDeleteFirstTable.Click += (s, e) => { presenter.DeleteBird(FirstTable.SelectedItem); UpdateBird(); };
-            buttonDeleteSecondTable.Click += (s, e) => { presenter.DeleteMammal(SecondTable.SelectedItem); UpdateMammals(); };
-            buttonDeleteThirdTable.Click += (s, e) => { presenter.DeleteAmphibian(ThirdTable.SelectedItem); UpdateAmphibian(); };
+            buttonDeleteFirstTable.Click += (s, e) => { presenter.DeleteBird(FirstTable.SelectedItem); UpdateAllTable(); };
+            buttonDeleteSecondTable.Click += (s, e) => { presenter.DeleteMammal(SecondTable.SelectedItem); UpdateAllTable(); };
+            buttonDeleteThirdTable.Click += (s, e) => { presenter.DeleteAmphibian(ThirdTable.SelectedItem); UpdateAllTable(); };
 
+            buttonAddFirstTable.Click += AddModel;
+            buttonAddSecondTable.Click += AddModel;
+            buttonAddThirdTable.Click += AddModel;
 
         }
+
+        ~MainWindow()
+        {
+
+        }
+
 
         public IEnumerable BirdTable 
         {
@@ -58,47 +65,74 @@ namespace Pattern
 
 
         #region private method
-        private void UpdateAmphibian()
+        /// <summary>
+        /// Обновить все данные
+        /// </summary>
+        private void UpdateAllTable()
         {
             AmphibianTable = presenter.GetAmphibians();
-        }
-
-        private void UpdateMammals()
-        {
             MammalTable = presenter.GetMammals();
-        }
-
-        private void UpdateBird()
-        {
             BirdTable = presenter.GetBirds();
         }
-        #endregion
 
+        /// <summary>
+        /// Обновить выбранную можель в первой таблице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUpdateFirstTable_Click(object sender, RoutedEventArgs e)
         {
             Update update = new Update(FirstTable.SelectedItem);
             update.ShowDialog();
             string newName = update.textUpdate.Text;
             presenter.UpdateBird(FirstTable.SelectedItem, newName);
-            UpdateBird();
+            UpdateAllTable();
         }
 
+        /// <summary>
+        /// Обновить выбранную модель во второй таблице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUpdateSecondTable_Click(object sender, RoutedEventArgs e)
         {
             Update update = new Update(SecondTable.SelectedItem);
             update.ShowDialog();
             string newName = update.textUpdate.Text;
             presenter.UpdateMammal(SecondTable.SelectedItem, newName);
-            UpdateMammals();
+            UpdateAllTable();
         }
 
+        /// <summary>
+        /// Обновить выбранную модель в третьей таблице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void buttonUpdateThirdTable_Click(object sender, RoutedEventArgs e)
         {
             Update update = new Update(ThirdTable.SelectedItem);
             update.ShowDialog();
             string newName = update.textUpdate.Text;
             presenter.UpdateAmphibion(ThirdTable.SelectedItem, newName);
-            UpdateAmphibian();
+            UpdateAllTable();
         }
+
+        /// <summary>
+        /// Добавить модель (исп. фабрика)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void AddModel(object sender, RoutedEventArgs e)
+        {
+            Add add = new Add();
+            add.ShowDialog();
+            string typeAnimal = add.modelName.Text;
+            string nameKind = add.nameKind.Text;
+            presenter.AddAnimal(typeAnimal, nameKind);
+            UpdateAllTable();
+        }
+
+        #endregion
+
     }
 }

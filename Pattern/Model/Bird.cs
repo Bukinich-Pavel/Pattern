@@ -10,7 +10,6 @@ namespace Pattern.Model
     {
         public int Id { get; set; }
         public string KindAnimal { get; set; }
-        public bool CanFly { get; set; }
 
         public Bird(string kindAnimal)
         {
@@ -19,8 +18,7 @@ namespace Pattern.Model
 
         public override string ToString()
         {
-            string canfly = CanFly ? "Умеет летать" : "Не умеет летать";
-            return $"Птица - {KindAnimal} - {canfly}";
+            return $"Птица - {KindAnimal}";
         }
     }
 }

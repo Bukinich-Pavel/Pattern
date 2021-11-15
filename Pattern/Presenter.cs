@@ -1,4 +1,5 @@
-﻿using Pattern.Model;
+﻿using Pattern.Factory;
+using Pattern.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,19 +34,28 @@ namespace Pattern
             return model.GetAllAmphibian();
         }
 
-        public void AddBird(Bird bird)
+
+        public void AddAnimal(string typeAnimal, string kindAnimal)
         {
+            if (string.IsNullOrEmpty(typeAnimal) || string.IsNullOrEmpty(kindAnimal)) return;
 
-        }
-
-        public void AddMammal(Mammal mammal)
-        {
-
-        }
-
-        public void AddAmphibian(Amphibian Amphibian)
-        {
-
+            IAnimal animal = AnimalFactory.GetAnimal(typeAnimal, kindAnimal);
+            if(animal is Bird)
+            {
+                model.AddBird(animal as Bird);
+            }
+            else if (animal is Mammal)
+            {
+                model.AddMammal(animal as Mammal);
+            }
+            else if (animal is Amphibian)
+            {
+                model.AddAmphibian(animal as Amphibian);
+            }
+            else
+            {
+                return;
+            }
         }
 
 
